@@ -7,8 +7,7 @@ install_lint:
 install_staticcheck:
 	go install honnef.co/go/tools/cmd/staticcheck@latest
 
-
-validate: validate_lint validate_vet
+validate: validate_lint validate_vet validate_staticcheck
 # validate_staticcheck validate_dependencyVulnerability validate_licenseFile validate_licenseCheck
 
 validate_lint:
